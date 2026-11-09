@@ -1,0 +1,44 @@
+{
+  "name": "bi1_maximilian_l",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "generate": "tsoa spec-and-routes",
+    "dev": "nodemon",
+    "prebuild": "npm run generate",
+    "pretest": "npm run generate",
+    "test": "jest",
+    "build": "tsc",
+    "start": "node dist/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dragecko/BI1_Maximilian_L.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dragecko/BI1_Maximilian_L/issues"
+  },
+  "homepage": "https://github.com/Dragecko/BI1_Maximilian_L#readme",
+  "dependencies": {
+    "express": "^5.3.0",
+    "swagger-ui-express": "^5.0.1",
+    "tsoa": "^6.6.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/jest": "^30.0.0",
+    "@types/node": "^26.6.6",
+    "@types/supertest": "^7.2.1",
+    "@types/swagger-ui-express": "^4.1.8",
+    "jest": "^30.5.2",
+    "nodemon": "^3.1.14",
+    "supertest": "^7.3.1",
+    "ts-jest": "^29.4.15",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}

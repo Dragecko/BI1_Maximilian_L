@@ -1,0 +1,15 @@
+{
+    "entryFile": "src/app.ts",
+    "noImplicitAdditionalProperties": "throw-on-extras",
+    "controllerPathGlobs": ["src/controllers/**/*Controller.ts"],
+    "spec": {
+      "outputDirectory": "src/generated",
+      "specVersion": 3,
+      "name": "BI1 – Micro-service",
+      "version": "1.0.0",
+      "description": "Micro-service REST de l'ETL de classe BI1 (Express 5 + tsoa). Documentation générée automatiquement depuis les contrôleurs."
+    },
+    "routes": {
+      "routesDir": "src/generated"
+    }
+  }
