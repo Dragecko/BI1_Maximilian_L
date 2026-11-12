@@ -4,4 +4,5 @@ const port = Number(process.env.PORT) || 3000;
 
 app.listen(port, () => {
   console.log(`Service démarré sur http://localhost:${port}`);
+  console.log(`serveur documentation: http://localhost:${port}/docs`);
 });
