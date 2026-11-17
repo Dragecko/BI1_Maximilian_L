@@ -15,7 +15,7 @@
     "test": "jest",
     "build": "tsc",
     "start": "node dist/main/server.js",
-    "debug": "node --inspect -r ts-node/register src/main/server.ts"
+    "debug": "node --inspect --require ts-node/register src/main/server.ts"
   },
   "dependencies": {
     "express": "^5.3.0",
