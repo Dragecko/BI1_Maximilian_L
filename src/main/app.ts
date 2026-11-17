@@ -1,8 +1,8 @@
 import express, { NextFunction, Request, Response } from "express";
 import { ValidateError } from "tsoa";
 import swaggerUi from "swagger-ui-express";
-import { RegisterRoutes } from "./generated/routes";
-import swaggerDocument from "./generated/swagger.json";
+import { RegisterRoutes } from "../routes/routes";
+import swaggerDocument from "../swagger/swagger.json";
 
 export const app = express();
 
