@@ -7,9 +7,16 @@
         "name": "Debug API",
         "preLaunchTask": "tsoa: generate",
         "runtimeArgs": ["-r", "ts-node/register"],
-        "args": ["${workspaceFolder}/src/server.ts"],
+        "args": ["${workspaceFolder}/src/main/server.ts"],
         "skipFiles": ["<node_internals>/**"],
         "console": "integratedTerminal"
+      },
+      {
+        "type": "node",
+        "request": "attach",
+        "name": "Attach to API",
+        "port": 9229,
+        "skipFiles": ["<node_internals>/**"]
       }
     ]
   }
